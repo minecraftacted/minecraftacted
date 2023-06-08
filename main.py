@@ -3,6 +3,7 @@ import discord
 # インテントの生成
 intents = discord.Intents.default()
 intents.message_content = True
+token = "MTExNjI5MzI5MDU3NzM3NTI1Mw.GMQeGn.VMrH1SauNiR3V2ysrFRSPNVOWyEOh-fDvEBScg"
 
 # クライアントの生成
 client = discord.Client(intents=intents)
@@ -31,4 +32,4 @@ async def on_message(message):
         await messages[0].delete()
 
 # クライアントの実行
-client.run('MTExNjI5MzI5MDU3NzM3NTI1Mw.Go8FQ4.L7b9uDyXelVshMZhbv577fUH_KsqID4cI7WXTw')
+client.run(token)
